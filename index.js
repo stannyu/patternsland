@@ -1,11 +1,12 @@
-import droidProducer from "./patterns/creational/abstract-factory";
+//CREATIONAL
+import "./patterns/creational/abstract-factory";
 
-console.log('Index JS loaded!');
 
-/**
- * Abstract Factory pattern
- * Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
- */
-const myDroid = droidProducer('battle')();
-let str = myDroid.info();
-console.log(str);
+const foo = "fooValue";
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", logger);
+
+function logger() {
+  console.log({ foo });
+}
