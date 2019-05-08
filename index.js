@@ -1,5 +1,6 @@
 //CREATIONAL
 import "./patterns/creational/abstract-factory";
+import "./patterns/creational/builder";
 
 
 const foo = "fooValue";
