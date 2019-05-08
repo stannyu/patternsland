@@ -3,6 +3,7 @@ import "./patterns/creational/abstract-factory";
 import "./patterns/creational/builder";
 import "./patterns/creational/factory";
 import "./patterns/creational/prototype";
+import "./patterns/creational/singleton";
 
 
 const foo = "fooValue";

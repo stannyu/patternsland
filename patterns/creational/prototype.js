@@ -23,7 +23,7 @@ export default Sheep;
 
 console.warn('PROTOTYPE:');
 
-let dollySheep = new Sheep('Dolly', '15kg');
+const dollySheep = new Sheep("Dolly", '15kg');
 dollySheep.getSheep();
 
 let newSheep = dollySheep.clone();
