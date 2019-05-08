@@ -1,3 +1,8 @@
+/**
+ * Abstract Factory pattern
+ * Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+ */
+
 function droidProducer(kind) {
   if (kind === 'battle') return battleDroidPattern;
   return pilotDroidPattern;
@@ -25,11 +30,8 @@ class Rx24 {
 
 export default droidProducer;
 
+console.warn('ABSTRACT-FACTORY');
 
-/**
- * Abstract Factory pattern
- * Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
- */
 const myDroid = droidProducer("battle")();
 let str = myDroid.info();
 console.log(str);

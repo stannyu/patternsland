@@ -26,6 +26,8 @@ class Tesla {
 
 export default TeslaPattern;
 
+console.warn('FACTORY:');
+
 const teslaConstructor = new TeslaPattern();
 const texlaX = teslaConstructor.create('ModelX');
 
