@@ -38,6 +38,8 @@ class RequestPattern {
 
 export default RequestPattern;
 
+console.warn('BUILDER:');
+
 let a = new RequestPattern();
 a.useMethod(logger);
 
