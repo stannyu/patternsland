@@ -1,3 +1,8 @@
+/**
+ * Builder pattern:
+ * Separate the construction of a complex object from its representation
+ * so that the same construction process can create different representations.
+ */
 class Request {
   constructor() {
     this.url = '';
@@ -34,7 +39,12 @@ class RequestPattern {
 export default RequestPattern;
 
 let a = new RequestPattern();
-a.useMethod(()=>console.log('inner method'));
+a.useMethod(logger);
+
 let b = a.build();
-console.log(b);
 b.method();
+
+
+function logger() {
+  console.log('inner method', this);
+}
