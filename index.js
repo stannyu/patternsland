@@ -9,6 +9,9 @@
 import "./patterns/structural/adapter";
 import "./patterns/structural/bridge";
 
+//BEHAVIORAL
+import "./patterns/behavioral/observer";
+
 
 const foo = "fooValue";
 const btn = document.getElementById("btn");
